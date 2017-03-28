@@ -1,0 +1,82 @@
+@media (max-width:767px) {
+    h2 {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 10px;
+}
+
+}@media (min-width:767px) and (max-width:991px) {
+    h2 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+}@media (min-width:991px) {
+    h2 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 22px;
+}
+.compra {
+    background-color: #f8f8f8;
+}
+.compra h2 {
+	font-weight: bold;
+}
+.panel {
+	margin-top: 50px;
+	margin-left: 80px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-title {
+	background-color: #000000 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+.panel > .panel-heading {
+    color: #FFFFFF;
+    background-color: #000000 !important;
+    text-align: center;
+}
+.panel > .panel-button button {
+    color: #2D2D2D;
+    background-color: #DCDAEF;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+}
+.panel > .panel-button button:hover {
+    background-color: #B4B2C5;
+}
+.buttons {
+	font-size: 22px;
+	color: #2D2D2D;
+	margin-top: 40px;
+	margin-left: 100px;
+	margin-bottom: 50px;	
+}
+.buttons label input {
+	transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    border: 0px;
+    font-weight: bold;	
+}
+.carrusel{
+	margin-top: 50px;
+	height: 250px; 
+}
+.carrusel .carrusel-div{
+	height: 200px;
+	background-color: #FFFFFF; 
+}
+
+}

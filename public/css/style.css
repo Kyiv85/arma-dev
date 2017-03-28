@@ -1,0 +1,146 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body {
+   background-color: #ffffff;
+   margin: 0;
+   padding: 0;
+}
+footer {
+  background-color: #000000;
+
+}
+
+footer, h4, h5, h6, p, a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+}
+
+.btn-primary {
+  background-color: #000000;
+  width: 200px;
+  margin: auto;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+.icon-facebook, .icon-instagram {
+  font-size: 25px;
+}
+
+.panel-title, .panel-footer {
+  font-size: 25px;
+}
+section, article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar-default {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: #ffffff;
+}
+
+.well {
+    margin-top: 90px;
+}
+
+.checkbox label, .radio label {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: 12px 0 0;
+}
+
+.thumbnail {
+    border: 0px solid #ffffff;
+}
+
+.input-group-addon {
+    background-color: #ffffff;
+    border: 0px solid #ffffff;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    border-radius: 0px;
+    border-color: #000000;
+}
+
+.form-control, .form-group {
+    border-radius: 0px;
+    border-color: #000000
+}
+
+.form-control {
+    height: 45px;
+}
+
+.lead {
+    font-size: 30px;
+}
+.panel-default {
+  border-color: #ffffff;
+}
+.panel-default>.panel-heading {
+    height: 50px;
+    color: #ffffff;
+    text-align: center;
+}
+.panel-default>.panel-heading {
+  background-color: #000000;
+}
+.panel-footer {
+  background-color: #333;
+  height: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+.multi-item-carousel {
+    .carousel-inner {
+        >.item {
+            transition: 500ms ease-in-out left;
+        }
+        .active {
+            &.left {
+                left: -33%;
+            }
+            &.right {
+                left: 33%;
+            }
+        }
+        .next {
+            left: 33%;
+        }
+        .prev {
+            left: -33%;
+        }
+        @media all and (transform-3d), (-webkit-transform-3d) {
+            >.item {
+                // use your favourite prefixer here
+                transition: 500ms ease-in-out left;
+                transition: 500ms ease-in-out all;
+                backface-visibility: visible;
+                transform: none!important;
+            }
+        }
+    }
+    .carouse-control {
+        &.left, &.right {
+            background-image: none;
+        }
+    }
+}
+
+// non-related styling:

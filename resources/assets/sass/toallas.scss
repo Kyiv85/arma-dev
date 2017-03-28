@@ -1,0 +1,712 @@
+@import "variables";
+
+#toallas {
+  &-header {
+    background: url(/storage/img/toallas-fondo.jpg) center top no-repeat scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+      height: 75vh;
+    }
+
+    &-footer {
+      position: relative;
+
+      @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+        height: 15vh;
+      }
+
+      &-position {
+        @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+          position: absolute;
+          top: 20%;
+        }
+        
+      }
+    }
+  }
+}
+
+#armatura {
+  &-logo, &-img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &-logo {
+    @media (max-width: $screen-sm - 1) {
+      height: 80px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      height: 80px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      height: 120px;
+    }
+
+    @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+      height: 15vh;
+    }
+  }
+
+  &-img {
+    @media (max-width: $screen-sm - 1) {
+      height: 250px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      height: 400px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      height: 500px;
+    }
+
+    @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+      height: 60vh;
+    }
+  }
+}
+
+.header {
+  &-content, &-img {
+    @media (max-width: $screen-sm - 1) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+      padding-top: 10vh;
+    }
+  }
+
+  &-content {
+    justify-content: center;
+  }
+}
+
+.row.is-flex-mobile {
+  @media (max-width: $screen-sm - 1) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    > [class*='col-'] {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+#header {
+  &-text {
+    padding-top: 20px;
+    color: $color-blanco;
+
+    h3 {
+      font-weight: 700;
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 20px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 28px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 34px;
+      }
+
+      @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+        font-size: 34px;
+      }
+    }
+
+    &-especial {
+      color: $color-blanco;
+      font-weight: 300;
+
+      @media (max-width: $screen-sm - 1) {
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+
+      @media (min-width: $screen-sm - 1) {
+        padding-top: 25px;
+        padding-bottom: 10px;
+      }
+
+      @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+        padding-top: 25px;
+        padding-bottom: 10px;
+      }
+      
+      p {
+        line-height: 100%;
+
+        @media (max-width: $screen-sm - 1) {
+          font-size: 12px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          font-size: 16px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          font-size: 20px;
+        }
+
+        @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &-tecnologia {
+      @media (max-width: $screen-sm - 1) {
+        padding-top: 2px;
+      }
+
+      @media (min-width: $screen-sm - 1) {
+        padding-top: 10px;
+      }
+
+      @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+        padding-top: 10px;
+      }
+
+      p {
+        text-decoration: underline;
+
+        @media (max-width: $screen-sm - 1) {
+          font-size: 10px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          font-size: 12px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          font-size: 14px;
+        }
+
+        @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-secafast {
+      &-img {
+        width: auto;
+        @media (max-width: $screen-sm - 1) {
+          height: 30px; 
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          height: 40px; 
+        }
+
+        @media (min-width: $screen-md - 1) {
+          height: 50px; 
+        }
+
+        @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+          height: 50px;
+        }
+      }
+
+      p {
+        font-weight: 700;
+
+        @media (max-width: $screen-sm - 1) {
+          font-size: 20px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          font-size: 30px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          font-size: 36px;
+        }
+
+        @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+
+.hvr-icon-hang {
+  color: #ff8f00;
+  padding-right: 0px;
+
+  @media (max-width: $screen-sm - 1) {
+    padding: 10px 0px 20px 0px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    padding: 15px 0px 30px 0px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    padding: 15px 0px 30px 0px;
+    font-size: 24px;
+  }
+
+  @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+    padding: 0px;
+    font-size: 24px;
+  }
+
+  &:visited, &:hover, &:link, &:active {
+    color: #ff8f00;
+    text-decoration: none;
+  }
+
+  &::before {
+    content: "\f078";
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    padding: 0 1px;
+    font-family: FontAwesome;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    @media (max-width: $screen-sm - 1) {
+      top: 30px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      top: 40px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      top: 40px;
+    }
+
+    @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+      top: 30px;
+    }
+  }
+}
+
+.marcas {
+  background-color: #919191;
+
+  a {
+    color: $color-blanco;
+
+    &:visited, &:hover, &:link, &:active {
+      color: $color-blanco;
+      text-decoration: none;
+    }
+  }
+
+  h3 {
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 12px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &.active {
+      color: #c6c6c6;
+    }
+  }
+}
+
+#col-marca {
+  @media (min-width: $screen-sm - 1) {
+    border-right: 1px solid #bcbcbc;
+  }
+
+  @media (max-width: $screen-sm - 1) {
+    border-bottom: 1px solid #bcbcbc;
+  }
+}
+
+#separador-marcas {
+  @media (max-width: $screen-sm - 1) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    margin-top: 30px;
+  }
+}
+
+#tamano-toallas {
+  border-right: 1px solid #bcbcbc;
+
+  &-img {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: $screen-sm - 1) {
+      height: 80px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      height: 100px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      height: 160px;
+    }
+  }
+
+  &-colores {
+    h3 {
+      font-weight: 300;
+      padding-bottom: 0px;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 12px;
+        padding-top: 10px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 16px;
+        padding-top: 15px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 20px;
+        padding-top: 20px;
+      }
+    }
+
+    &-img {
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 10px;
+      width: 90%;     
+    }
+  }
+
+  &-porcentajes {
+    color: #bcbcbc;
+
+    @media (max-width: $screen-sm - 1) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-weight: 400;
+      display: table;
+      margin-right: auto;
+      margin-left: auto;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 14px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 16px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 18px;
+      }
+
+    }
+
+    .circle {
+      border-radius: 50%;
+      border: 1px solid #bcbcbc;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      font-weight: 700;
+
+      @media (max-width: $screen-sm - 1) {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        width: 65px;
+        height: 65px;
+        font-size: 18px;
+      }
+
+      &-text {
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 10px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+#slider-armatura {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.slider-productos {
+  .lSSlideWrapper{
+    @media (max-width: $screen-sm - 1) {
+      height: 200px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      height: 230px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      height: 300px;
+    }
+  }
+
+  li {
+    background-color: #f8f8f8;
+    text-align: center;
+
+    &.active > img, &.lslide > img {
+      @media (max-width: $screen-sm - 1) {
+        height: 180px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        height: 220px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        height: 280px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  ul.lSPager.lSGallery {
+    text-align: center;
+
+    li {
+
+      text-align: center;
+    }
+
+    img {
+
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (max-width: $screen-sm - 1) {
+        height: 60px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        height: 80px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        height: 100px;
+      }
+    }
+  }
+}
+
+.cS-hidden {
+  height: 1px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  overflow: hidden;
+}
+
+.beneficios {
+  .thumbnail {
+    border: none;
+
+    @media (max-width: $screen-sm - 1) {
+      height: 130px;
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      height: 136px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      height: 162px;
+      margin-top: 50px;
+      margin-bottom: 25px;
+    }
+
+    img {     
+      @media (max-width: $screen-sm - 1) {
+        height: 30px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        height: 40px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        height: 50px;
+      }
+    }
+
+    h3 {
+      font-weight: 300;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 11px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 14px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+#beneficios {
+  &-fila {
+    @media (min-width: $screen-sm - 1) {
+      border-bottom: 1px solid #bcbcbc;
+    }
+  }
+
+  &-title {
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 0px;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 20px;
+    }
+  }
+
+  &-mensaje {
+    margin-bottom: 20px;
+    font-weight: 300;
+
+    p {
+      line-height: 90%;
+    }
+  }
+}
+
+#secar-mascotas {
+  @media (max-width: $screen-sm - 1) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    font-size: 24px;
+  }
+}
+
+#imaginacion-limite {
+  color: #ff8f00;
+
+  @media (max-width: $screen-sm - 1) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    font-size: 28px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    font-size: 34px;
+  }
+}

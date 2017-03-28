@@ -1,0 +1,315 @@
+@import "variables";
+
+#armatura {
+  &-carousel {
+    background: url(/storage/img/fondo-slider.jpg) center top no-repeat scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    @media (min-height: $vertical-sm) and (max-height: $vertical-md) and (min-width: $screen-lg - 1) { 
+      min-height: 90vh;
+    }
+
+    &:after {
+      z-index: -1; 
+      left: 50%;
+      margin-left: -10px;
+      content:'';
+      width: 0;
+      height: 0;
+
+      position: relative;
+      bottom: -8px;
+      border-style: solid;
+      border-width: 10px 10px 0 10px;
+      border-color: #000000 transparent transparent transparent;
+
+      @media (min-height: $vertical-sm) and (max-height: $vertical-md) and (min-width: $screen-lg - 1) {
+        position: absolute;
+        top: 100%;
+      }
+    }
+
+    h2 {
+      color: $color-blanco;
+      
+      @media (max-width: $screen-sm - 1) {
+        font-size: 16px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 22px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 28px;
+      }
+    }
+
+    p {
+      color: #bcbcbc;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 12px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 15px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 20px;
+      }
+    }
+
+    &-slide {
+
+      &-3, &-2, &-1 {
+        padding-top: 5vh;
+        
+        &-img {
+          margin-left: auto;
+          margin-right: auto;
+
+          @media (max-height: $vertical-md) {
+            @media (min-width: $screen-lg - 1) {
+              height: 60vh;
+            }
+            
+            @media (min-width: $screen-md - 1) and (max-width: $screen-lg - 1) {
+              height: 300px; 
+            }
+
+            @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+              height: 240px; 
+            }
+
+            @media (max-width: $screen-sm - 1) {
+              height: 120px;
+            }
+          }
+
+          @media (min-height: $vertical-md) {
+            @media (min-width: $screen-lg - 1) {
+              height: 400px; 
+            }
+            
+            @media (min-width: $screen-md - 1) and (max-width: $screen-lg - 1) {
+              height: 300px; 
+            }
+
+            @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+              height: 250px; 
+            }
+
+            @media (max-width: $screen-sm - 1) {
+              height: 120px;
+            }
+          }
+        }
+      }
+    }
+
+    &-footer {
+      padding: 10px 0px;
+
+      &-btn {
+        font-weight: 300;
+        background-color: $color-blanco;
+        border-color: $color-blanco;
+        color: $text-color;
+        border-radius: 0px;
+        
+        @media (max-width: $screen-sm - 1) {
+          font-size: 12px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          font-size: 16px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          font-size: 18px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &-caracteristicas {
+    p {
+      margin-bottom: 0px;
+    }
+
+    @media (max-width: $screen-sm - 1) {
+      padding-top: 20px;
+      p {
+        font-size: 12px;
+      }
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      padding-top: 30px;
+      p { 
+        font-size: 15px;
+      }
+    }
+
+    @media (min-width: $screen-md - 1) {
+      padding-top: 40px;
+      p {
+        font-size: 20px;
+      }
+    }
+
+    &-icons {
+      padding-top: 20px;
+    }
+  }
+
+  &-testimonio {
+    background-color: #f8f8f8;
+
+    blockquote {
+      border-left: none;
+      border-bottom: 1px solid #636363;
+
+      @media (min-width: $screen-lg - 1) {
+        font-size: 20px; 
+      }
+
+      @media (min-width: $screen-md - 1) and (max-width: $screen-lg - 1) {
+        font-size: 20px; 
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 15px; 
+      }
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.armatura {
+  &-caracteristicas {
+
+    &-thumbnail {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border: none;
+      cursor: pointer;
+
+      .caption {
+        padding: 0px;
+      }
+
+      > img {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (max-width: $screen-sm - 1) {
+          height: 60px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          height: 80px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          height: 100px;
+        }
+      }
+
+      h3 {
+        font-weight: 300;
+
+        @media (max-width: $screen-sm - 1) {
+          font-size: 13px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          font-size: 15px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.hvr-icon-down {
+  padding-right: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #bcbcbc;
+  cursor: pointer;
+
+  @media (max-width: $screen-sm - 1) {
+    font-size: 12px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    font-size: 22px;
+  }
+
+  &:link, &:visited, &:hover, &:active {
+    color: #bcbcbc;
+    text-decoration: none;
+  }
+}
+
+.hvr-icon-down::before {
+  content: "\f078";
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  padding: 0px 1px;
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  color: $color-blanco;
+
+  @media (max-width: $screen-sm - 1) {
+    top: 50px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    top: 50px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    top: 60px;
+  }
+}
+
+.display-table{
+  @media (min-width: $screen-sm - 1) {
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.display-cell{
+  @media (min-width: $screen-sm - 1) {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+  }
+}

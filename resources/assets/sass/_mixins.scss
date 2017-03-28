@@ -1,0 +1,5 @@
+@mixin vertical-align($align) {
+  display: inline-block;
+  float: none;
+  vertical-align: $align;
+}

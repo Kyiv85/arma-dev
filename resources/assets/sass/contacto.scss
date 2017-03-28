@@ -1,0 +1,384 @@
+@import "variables";
+
+.contacto {
+  &-header {
+    @media (max-width: $screen-sm - 1) {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &-img {
+    text-align: center;
+
+    @media (max-width: $screen-sm - 1) {
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    img {
+      display: inline;
+
+      @media (max-width: $screen-sm - 1) {
+        height: 15px;
+        width: auto;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        height: 20px;
+        width: auto;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        height: 25px;
+        width: auto;
+      }
+    }
+  }
+
+  &-btn {
+    font-weight: 300;
+    color: $color-blanco;
+    background-color: #ff8f00;
+    border-color: #ff8f00;
+
+    border-radius: 0px;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 12px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 14px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 16px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      margin-top: 20px;
+    }
+
+    &:link, &:visited, &:hover, &:active {
+      background-color: #ff8f00;
+      border-color: #ff8f00; 
+    }
+  }
+
+  &-panel {
+    margin-bottom: 0px;
+    border-radius: 0px;
+
+    @media (max-width: $screen-sm - 1) {
+      border: none;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    @media (min-width: $screen-sm - 1) {
+      padding-left: 25px;
+      padding-right: 25px;
+
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.4);
+      -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.4);
+      box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.4);
+    }
+
+    h2 {
+      font-weight: 700;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &-form {
+    text-align: center;
+    border-radius: 0px;
+    font-weight: 300;
+
+    @media (max-width: $screen-sm - 1) {
+      height: 30px;
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      height: 40px;
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      height: 50px;
+      font-size: 18px;
+    }
+
+  }
+}
+
+.vertical-bottom {
+  justify-content: flex-end;
+}
+
+.row-lateral {
+  background-color: $text-color;
+  color: #fff;
+
+  @media (max-width: $screen-sm - 1) {
+    padding-top: 10px;
+    height: 260px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    padding-top: 20px;
+    height: 240px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    padding-top: 30px;
+    height: 250px;
+  }
+
+  ul > li, p {
+    font-weight: 300;
+    text-align: left;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 11px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 14px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  ul li:before {
+    content: "•";
+    font-size: 90%;
+    padding-right: 5px;
+  }
+
+  h3 {
+    font-weight: 700;
+    margin-bottom: 0px;
+
+    @media (max-width: $screen-sm - 1) {
+      margin-top: 0px;
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  }
+}
+
+#contacto-social {
+  a {
+    vertical-align: 15%;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 20px;
+    }
+
+    &:link, &:visited, &:hover, &:active {
+      color: $color-blanco;
+      text-decoration: none;
+    }
+  }
+
+  p {
+    text-align: center;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 24px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 32px;
+    }
+  }
+
+  h3 {
+    font-weight: 300;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 14px;
+    }
+  }
+}
+
+#col-auxiliar {
+  background-color: $text-color;
+
+  @media (max-width: $screen-sm - 1) {
+    height: 30px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    height: 40px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    height: 60px;
+  }
+}
+
+#btn-enviar {
+  background-color: $text-color;
+  color: $color-blanco;
+
+  border-radius: 0px;
+  font-weight: 300;
+
+  @media (max-width: $screen-sm - 1) {
+    height: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    height: 40px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    height: 50px;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+}
+
+#modal {
+  &-header {
+    border-bottom: none;
+
+    .close {
+      float: left;
+      font-weight: 300;
+      opacity: 0.7;
+
+      @media (max-width: $screen-sm - 1) {
+        margin-top: -25px;
+        font-size: 50px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        margin-top: -25px;
+        font-size: 50px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        margin-top: -30px;
+        font-size: 60px;
+      }
+    }
+  }
+
+  &-body {
+    @media (max-width: $screen-sm - 1) {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-weight: 300;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 16px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 20px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 24px;
+      }
+    }
+  }
+}

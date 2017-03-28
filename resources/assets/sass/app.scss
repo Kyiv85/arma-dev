@@ -1,0 +1,93 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// hover.css
+@import "node_modules/hover.css/scss/hover";
+
+// FontAwesome
+@import "node_modules/font-awesome/scss/font-awesome";
+
+// navbar
+@import "navbar";
+
+// footer
+@import "footer";
+
+// mixins
+@import "mixins";
+
+.antipadding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.vcenter {
+  @include vertical-align(middle);
+}
+
+.row.is-flex {
+  @media (min-width: $screen-sm - 1) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    > [class*='col-'] {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+}
+
+
+#armatura {
+  &-logo {
+    text-align: center;
+
+    @media (max-width: $screen-sm - 1) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    img {
+      @media (max-width: $screen-sm - 1) {
+        height: 60px;
+        width: auto;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        padding-top: 20px;
+        height: 90px;
+        width: auto;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        padding-top: 30px;
+        height: 120px;
+        width: auto;
+      }
+
+      @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+        padding-top: 5vh;
+        height: 20vh;
+        width: auto;
+      }
+    }
+  }
+}

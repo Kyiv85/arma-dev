@@ -1,0 +1,573 @@
+@import "variables";
+
+.is-kanicarbono {
+  background: url(/storage/img/canilleras-fondo-big.jpg) center bottom no-repeat scroll;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  @media (min-width: $screen-sm - 1) {
+    margin-right: -10px;
+  }
+
+  @media (max-width: $screen-sm - 1) {
+    height: 100px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    height: 400px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    height: 500px;
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: $screen-sm - 1) {
+      height: 85px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      margin-top: 40px;
+      height: 300px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      margin-top: 50px;
+      height: 400px;
+    }
+  }
+}
+
+.is-kanisport {
+  position: relative;
+
+  @media (min-width: $screen-sm - 1) {
+    margin-bottom: 10px;
+  }
+}
+
+.is-personalizacion {
+  @media (min-width: $screen-sm - 1) {
+    margin-top: 10px;
+  }  
+}
+
+.is-kanicarbono, .is-kanisport, .is-personalizacion {
+  cursor: pointer;
+  padding-bottom: 10px;
+
+  @media (max-width: $screen-sm - 1) {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  .active {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 0.5s ease;
+  }
+
+  img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+
+    &:hover {
+      filter: grayscale(0%);
+      filter: gray;
+      -webkit-filter: grayscale(0%);
+      filter: none;
+      transition: 0.5s ease;
+    }
+  }
+
+  a {
+    color: $color-blanco;
+
+    &:visited, &:hover, &:link, &:active {
+      color: $color-blanco;
+      text-decoration: none;
+    }
+  }
+
+  h3 {
+    font-weight: 700;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 24px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 28px;
+    }
+  }
+}
+
+.is-kanisport, .is-personalizacion {
+  background: url(/storage/img/canilleras-fondo-small.png) center bottom no-repeat scroll;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  @media (min-width: $screen-sm - 1) {
+    margin-left: -10px;
+  }
+  
+  @media (max-width: $screen-sm - 1) {
+    height: 100px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    height: 195px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    height: 245px;
+  }
+
+  img {
+
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: $screen-sm - 1) {
+      height: 65px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      height: 145px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      height: 180px;
+    }
+  }
+}
+
+.img-padding {
+  @media (max-width: $screen-sm - 1) {
+    padding-top: 5px;
+  }
+
+  @media (min-width: $screen-sm - 1) {
+    padding-top: 20px;
+  }
+}
+
+.categoria-title {
+  position: absolute;
+  bottom: 0px;
+}
+
+.calidad {
+  @media (max-width: $screen-sm - 1) {
+    padding: 15px 0px 35px 0px;
+  }
+
+  @media (min-width: $screen-sm - 1) {
+    padding: 20px 0px 40px 0px;
+  }
+
+  a {
+    color: $text-color;
+    font-weight: 700;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 26px;
+    }
+
+    &:visited, &:hover, &:link, &:active {
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+}
+
+#futbolistas {
+  color: #ff852b;
+}
+
+.hvr-icon-hang::before {
+  content: "\f078";
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  padding: 0 1px;
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  font-weight: 300;
+
+  @media (max-width: $screen-xs - 1) {
+    top: 45px;
+  }
+
+  @media (min-width: $screen-xs - 1) and (max-width: $screen-sm - 1) {
+    top: 30px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    top: 30px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    top: 40px;
+  }
+}
+
+.marcas {
+  background-color: #919191;
+
+  a {
+    color: #c6c6c6;
+
+    &:visited, &:hover, &:link, &:active {
+      color: #c6c6c6;
+      text-decoration: none;
+    }
+  }
+
+  h3 {
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 12px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &.active {
+      color: $color-blanco;
+    }
+  }
+}
+
+#col-marca {
+  @media (min-width: $screen-sm - 1) {
+    border-right: 1px solid #bcbcbc;
+  }
+
+  @media (max-width: $screen-sm - 1) {
+    border-bottom: 1px solid #bcbcbc;
+  }
+}
+
+.tabdescription, .tabmallas {
+  h3 {
+    font-weight: 700;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 24px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 28px;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    line-height: 120%;
+    
+    @media (max-width: $screen-sm - 1) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      text-align: justify;
+    text-justify: inter-word;
+      font-size: 18px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      text-align: justify;
+    text-justify: inter-word;
+      font-size: 22px;
+    }
+  }
+}
+
+.porcentajes {
+  color: #bcbcbc;
+
+  @media (max-width: $screen-sm - 1) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $screen-md - 1) and (max-width: $screen-lg - 1) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $screen-lg - 1) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-weight: 700;
+    text-align: left;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 14px;
+      padding-top: 10px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 16px;
+      padding-top: 16px;
+    }
+
+    @media (min-width: $screen-md - 1) and (max-width: $screen-lg - 1) {
+      font-size: 18px;
+      padding-top: 18px;
+    }
+
+    @media (min-width: $screen-lg - 1) {
+      font-size: 18px;
+      padding-top: 20px;
+    }
+  }
+
+  .circle {
+    border-radius: 50%;
+    border: 1px solid #bcbcbc;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    float: right;
+    font-weight: 700;
+
+    @media (max-width: $screen-sm - 1) {
+      width: 40px;
+      height: 40px;
+      font-size: 14px;
+      padding-top: 6px;
+      padding-left: 2px
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      width: 50px;
+      height: 50px;
+      font-size: 16px;
+      padding-top: 12px;
+      padding-left: 3px;
+    }
+
+    @media (min-width: $screen-md - 1) and (max-width: $screen-lg - 1) {
+      width: 50px;
+      height: 50px;
+      font-size: 16px;
+      padding-top: 12px;
+      padding-left: 2px;
+    }
+
+    @media (min-width: $screen-lg - 1) {
+      width: 65px;
+      height: 65px;
+      font-size: 18px;
+      padding-top: 18px;
+      padding-left: 4px;
+    }
+  }
+
+  .malla {
+    color: #000;
+  }
+}
+
+.tabcaracteristicas, .tabcaracteristicas-mallas {
+  padding-bottom: 20px;
+
+  h2 {
+    font-weight: 700;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 18px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 24px;
+    }
+  }
+
+  li {
+    font-weight: 300;
+    
+    @media (max-width: $screen-sm - 1) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 20px;
+    }
+  }
+
+  ul {
+    @media (max-width: $screen-sm - 1) {
+      margin-left: 30px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      margin-left: 60px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      margin-left: 100px;
+    }
+  }
+
+  img {
+
+    @media (max-width: $screen-sm - 1) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    @media (min-width: $screen-sm - 1) {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+#slider-armatura {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.slider-productos {
+  .lSSlideWrapper{
+    @media (max-width: $screen-sm - 1) {
+      height: 200px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      height: 230px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      height: 300px;
+    }
+  }
+
+  li {
+    background-color: #f8f8f8;
+    text-align: center;
+
+    &.active > img, &.lslide > img {
+      @media (max-width: $screen-sm - 1) {
+        height: 180px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        height: 220px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        height: 280px;
+      }
+    }
+  }
+
+  ul.lSPager.lSGallery {
+    text-align: center;
+
+    li {
+
+      text-align: center;
+    }
+
+    img {
+
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (max-width: $screen-sm - 1) {
+        height: 60px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        height: 60px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        height: 80px;
+      }
+    }
+  }
+}
+
+.cS-hidden {
+  height: 1px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  overflow: hidden;
+}
+
+.mallas-compresion {
+  border-top: 1px solid #2d2d2d;
+  margin-top: 10px;
+  
+  @media (max-width: $screen-sm - 1) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+
+    padding-bottom: 40px;
+  }
+}

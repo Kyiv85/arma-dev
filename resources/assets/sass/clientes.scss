@@ -1,0 +1,280 @@
+@import "variables";
+
+#clientes {
+  &-header {
+    color: $color-blanco;
+    position: relative;
+
+    background: url(/storage/img/clientes-fondo.jpg) center top no-repeat scroll;
+
+    @media (max-width: $screen-sm - 1) {
+      background-size: 100% 230px;
+      -webkit-background-size: 100% 230px;
+      -moz-background-size: 100% 230px;
+      -o-background-size: 100% 230px;
+
+      height: 260px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      background-size: 100% 350px;
+      -webkit-background-size: 100% 350px;
+      -moz-background-size: 100% 350px;
+      -o-background-size: 100% 350px;
+
+      height: 400px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      background-size: 100% 450px;
+      -webkit-background-size: 100% 450px;
+      -moz-background-size: 100% 450px;
+      -o-background-size: 100% 450px;
+
+      height: 550px;
+    }
+
+    &-logos {
+      position: absolute;
+
+      @media (max-width: $screen-sm - 1) {
+        bottom: 5px;
+      }
+
+      @media (min-width: $screen-sm - 1) {
+        bottom: 10px;
+      }
+    }
+  }
+
+  &-title{
+    h2 {
+      font-weight: 700;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 16px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 24px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 28px;
+      }
+    }
+
+    h3 {
+      font-weight: 700;
+      margin-top: 5px;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 12px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 20px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 24px;
+      }
+
+    }
+  }
+}
+
+#armatura {
+  &-logo {
+    text-align: center;
+
+    @media (max-width: $screen-sm - 1) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    img {
+      @media (max-width: $screen-sm - 1) {
+        height: 60px;
+        width: auto;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        padding-top: 10px;
+        height: 90px;
+        width: auto;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        padding-top: 20px;
+        height: 120px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.clientes {
+  &-logo {
+    text-align: center;
+
+    img {
+      @media (max-width: $screen-sm - 1) {
+        height: 75px;
+        width: 75px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        height: 160px;
+        width: 160px;
+      }
+
+      @media (min-width: $screen-md - 1) and (max-width: $screen-lg - 1) {
+        height: 210px;
+        width: 210px;
+      }
+      
+      @media (min-width: $screen-lg - 1) {
+        height: 260px;
+        width: 260px;
+      }
+    }
+  }
+}
+
+[class*=" imghvr-"], [class^="imghvr-"] {
+  background-color: $text-color;
+  cursor: pointer;
+}
+
+[class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
+  background-color: $text-color;
+  color: $color-blanco;
+  padding: 0px;
+}
+
+[class*=" imghvr-"] h3, [class^="imghvr-"] h3 {
+  font-weight: 300;
+
+  @media (max-width: $screen-sm - 1) {
+    font-size: 11px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    font-size: 20px;
+  }
+}
+
+[class*=" imghvr-"] p, [class^="imghvr-"] p {
+  font-weight: 300;
+
+  @media (max-width: $screen-sm - 1) {
+    font-size: 10px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    font-size: 18px;
+  }
+}
+
+.row-logos {
+  @media (max-width: $screen-sm - 1) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.slider-clientes {
+  img {
+    @media (max-width: $screen-sm - 1) {
+      height: 80px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      height: 120px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      height: 160px;
+    }
+  }
+}
+
+ul.lSPager.lSpg {
+  display: none;
+}
+
+.cS-hidden {
+  height: 1px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  overflow: hidden;
+}
+
+.logos-externos {
+  @media (min-width: $screen-sm - 1) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $screen-sm - 1) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-weight: 700;
+
+    @media (max-width: $screen-sm - 1) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 20px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 26px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 32px;
+    }
+  }
+
+  h3 {
+    font-weight: 300;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 20px;
+    }
+  }
+}

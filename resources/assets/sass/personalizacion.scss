@@ -1,0 +1,482 @@
+@import "variables";
+
+#personalizacion {
+  &-header {
+    position: relative;
+    color: $color-blanco;
+
+    background: url(/storage/img/personalizacion-fondo.jpg) center bottom no-repeat scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    
+    @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+      height: 90vh;
+    }
+  }
+
+  &-img {
+    display: block;
+
+    @media (max-width: $screen-sm - 1) {
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    @media (min-width: $screen-sm - 1) {
+      text-align: left;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    img {
+      @media (max-width: $screen-sm - 1) {
+        height: 100px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        height: 180px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        height: 300px;
+      }
+
+      @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+        height: 50vh;
+      }
+    }
+  }
+
+  &-text {
+     @media (max-width: $screen-sm - 1) {
+        margin-top: 35px;
+      }
+
+    @media (min-width: $screen-sm - 1) {
+      justify-content: center;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      margin-top: 50px;
+    }
+
+    @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+      margin-top: 10vh;
+    }
+
+    p {
+      font-weight: 700;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 14px;
+        line-height: 100%;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 18px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 24px;
+      }
+
+      @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &-servicios {
+
+    @media (max-width: $screen-sm - 1) {
+        //height: 80px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+      img {
+        display: inline;
+
+        @media (max-width: $screen-sm - 1) {
+          height: 40px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          height: 60px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          height: 90px;
+        }
+
+        @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+          height: 10vh;
+        }
+      }
+
+      p {
+        font-weight: 700;
+
+        @media (max-width: $screen-sm - 1) {
+          font-size: 12px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          font-size: 16px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          font-size: 24px;
+        }
+
+        @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &-btn {
+
+      @media (max-width: $screen-sm - 1) {
+        margin-top: 10px;
+        margin-bottom: 100px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        margin-top: 10px;
+        margin-bottom: 60px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        margin-top: 10px;
+        margin-bottom: 80px;
+      }
+
+      @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: $text-color;
+        background-color: #fff;
+        font-weight: 300;
+        border-color: transparent;
+        border-radius: 0px;
+        
+        @media (max-width: $screen-sm - 1) {
+          padding-top: 2px;
+          padding-bottom: 2px;
+          font-size: 12px;
+        }
+
+        @media (min-width: $screen-sm - 1) {
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          font-size: 16px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          font-size: 18px;
+        }
+
+        @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  #redireccionar {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    a {
+      color: $color-blanco;
+      background-color: $text-color;
+      opacity: 0.7;
+      font-weight: 700;
+      border-color: $text-color;
+      border-radius: 0px;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 12px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 16px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 20px;
+      }
+
+      @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  #btn {
+    &-kanisport {
+      @media (min-width: $screen-sm - 1) {
+        padding-left: 0px;
+      }
+
+      @media (max-width: $screen-sm - 1) {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+
+    &-kanicarbono {
+      @media (min-width: $screen-sm - 1) {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      @media (max-width: $screen-sm - 1) {
+        padding-left: 0px;
+        padding-right: 2px;
+      }
+    }
+
+    &-toallas {
+
+      @media (min-width: $screen-sm - 1) {
+        padding-right: 0px;
+      }
+
+      @media (max-width: $screen-sm - 1) {
+        padding-left: 2px;
+        padding-right: 0px;
+      }
+    }
+  }
+
+  .contenido {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &-text {
+      text-align : justify;
+
+      @media (min-width: $screen-sm - 1) {
+        justify-content: center;
+      }
+
+      p {
+        font-weight: 300;
+
+        @media (max-width: $screen-sm - 1) {
+          font-size: 14px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          font-size: 17px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .thumbnail {
+      border: none;
+      text-align: center;
+
+      img {
+        @media (max-width: $screen-sm - 1) {
+          height: 120px;
+          width: auto;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          height: 160px;
+          width: auto;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          height: 200px;
+          width: auto;
+        }
+      }
+
+      h3 {
+        font-weight: 700;
+
+        @media (max-width: $screen-sm - 1) {
+          font-size: 18px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          font-size: 26px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  #thumbnail {
+    &-kanicarbono, &-toallas {
+      @media (min-width: $screen-sm - 1) {
+        border-right: 1px solid $text-color;
+      }
+    }
+
+    &-kanisport {
+      @media (min-width: $screen-sm - 1) {
+        border-left: 1px solid $text-color;
+      }
+    }
+
+    &-kanicarbono, &-kanisport, &-toallas {
+      @media (max-width: $screen-sm - 1) {
+        border-bottom: 1px solid $text-color;
+      }
+    }
+  }
+
+  #pasos {
+    color: $color-blanco;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background: url(/storage/img/pasos-fondo.jpg) center top no-repeat scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    p {
+      font-weight: 300;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 12px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 16px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 20px;
+      }
+    }
+
+    h2 {
+      font-weight: 700;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 18px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 24px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 32px;
+      }
+    }
+
+    &-title {
+      @media (min-width: $screen-sm - 1) {
+        justify-content: center;
+      }
+    }
+
+    &-btn {
+      @media (min-width: $screen-sm - 1) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: $color-blanco;
+        background-color: #ff8f00;
+        font-weight: 300;
+        border-color: transparent;
+        border-radius: 0px;
+        
+        @media (max-width: $screen-sm - 1) {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          font-size: 14px;
+        }
+
+        @media (min-width: $screen-sm - 1) {
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+
+        @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+          font-size: 16px;
+        }
+
+        @media (min-width: $screen-md - 1) {
+          font-size: 18px;
+        }
+
+        @media (min-height: $vertical-sm - 1) and (max-height: $vertical-md - 1) and (min-width: $screen-lg - 1) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .circle {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 300;
+
+    @media (max-width: $screen-sm - 1) {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+    }
+  }

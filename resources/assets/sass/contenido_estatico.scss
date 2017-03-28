@@ -1,0 +1,203 @@
+@import "variables";
+
+.contenido-estatico {
+  h2 {
+    font-weight: 700;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      padding-top: 20px;
+      padding-bottom: 15px;
+      font-size: 26px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      padding-top: 20px;
+      padding-bottom: 15px;
+      font-size: 32px;
+    }
+  }
+
+  h3 {
+    font-weight: 700;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      padding-top: 15px;
+      padding-bottom: 5px;
+      font-size: 18px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      padding-top: 20px;
+      padding-bottom: 5px;
+      font-size: 22px;
+    }
+  }
+
+  h4 {
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 16px;
+    }
+  }
+
+  ul > li, p {
+    font-weight: 300;
+    text-align : justify;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 20px;
+    }
+  }
+
+  ol.title {
+    font-weight: 700;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 18px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 22px;
+    }
+  }
+
+  ol.text {
+    font-weight: 300;
+    text-align : justify;
+
+    @media (max-width: $screen-sm - 1) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-md - 1) {
+      font-size: 20px;
+    }
+  }
+}
+
+.table {
+
+  &-medidas {
+
+    p {
+      @media (max-width: $screen-sm - 1) {
+        text-align: left;
+      }
+    }
+
+    h4 {
+      @media (max-width: $screen-sm - 1) {
+        font-size: 11px;
+        margin: 0px;
+      }
+    }
+
+    th {
+      font-weight: 700;
+
+      @media (max-width: $screen-sm - 1) {
+        font-size: 12px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        font-size: 16px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        font-size: 18px;
+      }
+    }
+
+    th, td {
+      border-left: 1px solid $text-color;
+      border-right: 1px solid $text-color;
+
+      @media (max-width: $screen-sm - 1) {
+        padding: 2px;
+      }
+
+      @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+        padding: 5px;
+        width: 130px;
+      }
+
+      @media (min-width: $screen-md - 1) {
+        padding: 10px;
+        width: 150px;
+      }
+    }
+
+    td.primera-columna, th.primera-columna {
+      border-left: none;
+    }
+
+    td.ultima-columna, th.ultima-columna {
+      border-right: none;
+    }
+
+    td {
+      font-weight: 300;
+    }
+
+    thead {
+      border-bottom: 1px solid $text-color;
+
+      tr {
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+.peso {
+  vertical-align: bottom;
+}
+
+.garantia {
+  @media (max-width: $screen-sm - 1) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $screen-sm - 1) and (max-width: $screen-md - 1) {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
